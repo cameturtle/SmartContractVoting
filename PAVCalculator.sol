@@ -16,7 +16,7 @@ contract PAVCalculator {
         matchingCounter = vectorLib.dot(vote, option);
 
         if(matchingCounter > 0) {
-            for (int256 i =1; i < matchingCounter; i++) {
+            for (int256 i = 1; i < matchingCounter + 1; i++) {
                 votingPower += _DENOMINATOR / i;
             }
         }
